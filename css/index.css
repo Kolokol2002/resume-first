@@ -1,0 +1,141 @@
+body {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-family: "Plus Jakarta Sans";
+  background: #0F172A;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container-secondary {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 468px;
+  outline: 1px solid red;
+}
+
+.header {
+  border-bottom: 0.5px solid #334155;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.header__title {
+  margin-bottom: 4px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.4;
+  color: #E2E8F0;
+}
+.header__subtitle {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #CBD5E1;
+}
+.header__address-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.header__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #E2E8F0;
+  fill: #E2E8F0;
+}
+.header__address-text {
+  margin-left: 4px;
+}
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 6px;
+}
+.header__item {
+  border-radius: 50px;
+  border: 0.5px solid;
+}
+.header__item:nth-child(1) {
+  background: #F6F3FF;
+  border-color: #7C3AED;
+  color: #7C3AED;
+  fill: #7C3AED;
+}
+.header__item:nth-child(2) {
+  background: #F1F8FF;
+  border-color: #0A66C2;
+  color: #0A66C2;
+  fill: #0A66C2;
+}
+.header__item:nth-child(3) {
+  background: #FFF4F1;
+  border-color: #F24E1E;
+  color: #F24E1E;
+  fill: #F24E1E;
+}
+.header__item:nth-child(4) {
+  background: #F2F2F2;
+  border-color: #222222;
+  color: #222222;
+  fill: #222222;
+}
+.header__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 6px 12px;
+  color: inherit;
+  fill: inherit;
+}
+.header__button-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 4px;
+}/*# sourceMappingURL=index.css.map */
