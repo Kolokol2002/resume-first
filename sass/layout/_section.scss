@@ -1,12 +1,26 @@
 .section {
     padding: 0 15px;
 
+    &__container {
+        border-bottom: 0.5px solid #334155;
+        padding: 30px 0;
+    }
+
     &__box {
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        padding: 30px 0;
-        border-bottom: 0.5px solid #334155;
+    }
+
+    &__box-content {
+        margin-left: 380px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+
     }
 
     &__title {
@@ -33,9 +47,5 @@
         font-size: 19px;
         line-height: 1;
         letter-spacing: -0.05em;
-    }
-
-    &__ {
-        
     }
 }

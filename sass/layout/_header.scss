@@ -1,10 +1,38 @@
 .header {
-
+    position: relative;
     border-bottom: 0.5px solid #334155;
     padding-top: 90px;
     padding-bottom: 40px;
     margin-bottom: 50px;
     text-align: center;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, #0F172A 100%);
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: block;
+        background: url('../../images/line-horizontal.png'), 
+                    url('../../images/line-vertical.png');
+    }
+
+    &::after {
+        position: absolute;
+        z-index: -2;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: -70%;
+        background: conic-gradient(from 182.43deg at 50% 50%, #FE79B9 0deg, #AD00FF 150deg, #2489FF 360deg);
+        opacity: 0.92;
+        filter: blur(60px);
+        transform: rotate(-6.02deg);
+    }
 
     &__title {
         margin-bottom: 4px;
