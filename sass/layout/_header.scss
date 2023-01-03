@@ -1,22 +1,16 @@
 .header {
 
     border-bottom: 0.5px solid #334155;
-    padding-top: 40px;
-    padding-bottom: 16px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
-
-    &__container-secondary {
-        // display: flex;
-        // justify-content: center;
-        // align-content: center;
-    }
 
     &__title {
         margin-bottom: 4px;
         font-weight: 800;
         font-size: 40px;
         line-height: 1.4;
-        color: #E2E8F0;
     }
 
     &__subtitle {
@@ -42,8 +36,7 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 1.5;
-        color: #E2E8F0;
-        fill: #E2E8F0;
+        fill: $color-text-primary;
     }
 
     &__address-text {

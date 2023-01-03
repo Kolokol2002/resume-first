@@ -1,11 +1,12 @@
+// Utils
+@import './utils/variables';
+
 // Base
 @import './base/base';
 @import './base/resets';
 
-
 // Components
-@import './components/containers';
 
 // Layout
-
 @import './layout/header';
+@import './layout/section';
