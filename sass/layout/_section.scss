@@ -1,9 +1,12 @@
 .section {
     padding: 0 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.26;
 
     &__container {
         border-bottom: 0.5px solid #334155;
-        padding: 30px 0;
+        padding: 35px 0;
     }
 
     &__box {
@@ -13,21 +16,44 @@
     }
 
     &__box-content {
-        margin-left: 380px;
-        margin-bottom: 20px;
+        margin-left: 330px;
+        
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
     }
 
     &__list {
         display: flex;
-        gap: 10px;
+        gap: 11px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
 
+    &__item {
+        font-weight: 500;
+        color: #CBD5E1;
+        padding: 3px 8px;
+        background: #334155;
+        border-radius: 7.6916px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        line-height: 1.5;
+        color: #E2E8F0;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__icon-dot {
+        fill: #CBD5E1;
+        margin-right: 15px;
     }
 
     &__title {
-        width: 380px;
-        margin: 0;
-        font-weight: 700;
-        font-size: 20px;
+        width: 330px;
     }
 
     &__under-title {
@@ -37,15 +63,16 @@
         }
     }
 
-    &__icon {
+    &__icon-date {
         fill: #64748B;
+        margin-right: 5px;
     }
 
     &__date {
         font-family: 'Inconsolata';
         font-weight: 500;
-        font-size: 19px;
-        line-height: 1;
+        font-size: 20px;
+        line-height: 1.1;
         letter-spacing: -0.05em;
     }
 }
