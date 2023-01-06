@@ -19,6 +19,7 @@
         background: url('../../images/line-horizontal.png'), 
                     url('../../images/line-vertical.png');
         background-size: contain;
+        background-repeat:round;
     }
 
     &::after {

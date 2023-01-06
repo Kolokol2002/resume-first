@@ -8,28 +8,41 @@
         border-bottom: 0.5px solid #334155;
         padding: 35px 0;
     }
-
+    
     &__box {
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        // align-items: center;
+        justify-content: space-between;
     }
-
-    &__box-content {
-        margin-left: 330px;
+    
+    &__content {
         
         &:not(:last-child) {
             margin-bottom: 25px;
         }
     }
 
+    &__flex-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 500px;
+    }
+
+    &__flex {
+        width: 100%;
+    }
+    
     &__list {
         display: flex;
         gap: 11px;
         margin-top: 14px;
         margin-bottom: 10px;
     }
-
+    
     &__item {
         font-weight: 500;
         color: #CBD5E1;
@@ -52,11 +65,9 @@
         margin-right: 15px;
     }
 
-    &__title {
-        width: 330px;
-    }
 
     &__under-title {
+        display: inline-block;
         margin-right: auto;
         &--dark {
             font-weight: 400;
@@ -64,15 +75,62 @@
     }
 
     &__icon-date {
+        // margin-left: auto;
         fill: #64748B;
         margin-right: 5px;
     }
 
     &__date {
+        display: inline-flex;
+        align-items: center;
         font-family: 'Inconsolata';
         font-weight: 500;
         font-size: 20px;
         line-height: 1.1;
         letter-spacing: -0.05em;
+    }
+}
+
+.section-skill {
+
+    &__box {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__subtitle {
+        display: inline-block;
+        // padding: 5px 0;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #64748B;
+        min-width: 230px;
+    }
+
+    &__list {
+        display: inline-block;
+    }
+
+    &__item {
+        font-weight: 500;
+        color: #CBD5E1;
+        display: inline-block;
+        background: #334155;
+        border-radius: 7.6916px;
+        padding: 5px 8px;
+        margin-bottom: 5px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
     }
 }
