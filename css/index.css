@@ -281,14 +281,25 @@ p {
   display: inline-block;
 }
 .section-skill__item {
-  font-weight: 500;
-  color: #CBD5E1;
+  position: relative;
   display: inline-block;
-  background: #334155;
-  border-radius: 7.6916px;
   padding: 5px 8px;
   margin-bottom: 5px;
+  overflow: hidden;
+  font-weight: 500;
+  color: #CBD5E1;
+  background: #334155;
+  border-radius: 7.6916px;
 }
 .section-skill__item:not(:last-child) {
   margin-right: 10px;
+}
+.section-skill__level {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 3px;
+  background-color: rgba(100, 116, 139, 0.72);
 }/*# sourceMappingURL=index.css.map */
