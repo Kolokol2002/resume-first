@@ -42,41 +42,37 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 0.5px solid #334155;
   min-width: 1200px;
   padding-top: 100px;
   padding-bottom: 40px;
   margin-bottom: 50px;
+  overflow: hidden;
+  border-bottom: 0.5px solid #334155;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 23, 42, 0)), to(#0F172A));
   background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, #0F172A 100%);
 }
 .header::before {
   position: absolute;
+  display: block;
+  content: "";
   z-index: -1;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  content: "";
-  display: block;
+  top: 0;
+  left: 0;
   background: url("../../images/line-horizontal.png"), url("../../images/line-vertical.png");
-  background-size: contain;
-  background-repeat: round;
+  background-size: cover;
 }
 .header::after {
   position: absolute;
-  z-index: -2;
   content: "";
+  z-index: -2;
   width: 100%;
   height: 100%;
+  top: 0;
   left: 0;
-  top: -70%;
-  background: conic-gradient(from 182.43deg at 50% 50%, #FE79B9 0deg, #AD00FF 150deg, #2489FF 360deg);
-  opacity: 0.92;
-  -webkit-filter: blur(60px);
-          filter: blur(60px);
-  -webkit-transform: rotate(-6.02deg);
-          transform: rotate(-6.02deg);
+  background: url("../../images/gradient.png");
+  background-size: cover;
 }
 .header__title {
   margin-bottom: 10px;
@@ -116,37 +112,37 @@ p {
 }
 .header__buttons {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  padding: 0;
+  margin: 0;
 }
 .header__item {
   border-radius: 50px;
   border: 0.5px solid;
 }
 .header__item:nth-child(1) {
-  background: #F6F3FF;
+  background-color: #F6F3FF;
   border-color: #7C3AED;
   color: #7C3AED;
   fill: #7C3AED;
 }
 .header__item:nth-child(2) {
-  background: #F1F8FF;
+  background-color: #F1F8FF;
   border-color: #0A66C2;
   color: #0A66C2;
   fill: #0A66C2;
 }
 .header__item:nth-child(3) {
-  background: #FFF4F1;
+  background-color: #FFF4F1;
   border-color: #F24E1E;
   color: #F24E1E;
   fill: #F24E1E;
 }
 .header__item:nth-child(4) {
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-color: #222222;
   color: #222222;
   fill: #222222;
@@ -161,8 +157,8 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5px;
-  text-decoration: none;
   padding: 6px 12px;
+  text-decoration: none;
   color: inherit;
   fill: inherit;
 }
