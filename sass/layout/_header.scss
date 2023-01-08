@@ -56,20 +56,35 @@
 
     &__address-box {
         display: flex;
-        gap: 20px;
+        gap: 5px;
         margin-bottom: 15px;
     }
 
     &__address {
         display: flex;
-        align-content: center;
-        justify-content: center;
-        gap: 5px;
         font-style: normal;
-        font-weight: 400;
         font-size: 18px;
-        line-height: 1.5;
         fill: $color-text-primary;
+        padding: 6px 12px;
+        border-radius: 50px;
+        border: 1px solid;
+        border-color: transparent;
+        transition: border-color 250ms cubic-bezier(.67, .12, .49, .9);
+
+        &:hover {
+            border-color: rgba(100, 116, 139, .72);
+        }
+    }
+
+    &__address-text {
+        display: flex;
+        color: inherit;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__address-icon {
+        margin-right: 5px;
     }
 
     &__buttons {
@@ -83,6 +98,8 @@
     &__item {
         border-radius: 50px;
         border: 0.5px solid;
+        backface-visibility: hidden;
+        transition: transform 250ms cubic-bezier(.56, .16, .41, 2);
     
         &:nth-child(1) {
             background-color: #F6F3FF;
@@ -107,7 +124,11 @@
             border-color: #222222;
             color: #222222;
             fill: #222222;
-    }
+        }
+        &:hover,
+        &:focus {
+            transform: scale(105%);
+        }
     }
 
     &__button {
@@ -116,7 +137,6 @@
         justify-content: center;
         gap: 5px;
         padding: 6px 12px;
-        text-decoration: none;
         color: inherit;
         fill: inherit;
         

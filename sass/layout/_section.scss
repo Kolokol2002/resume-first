@@ -66,7 +66,6 @@
         margin-right: 15px;
     }
 
-
     &__under-title {
         display: inline-block;
         margin-right: auto;
@@ -89,6 +88,7 @@
         font-size: 20px;
         line-height: 1.1;
         letter-spacing: -0.05em;
+        word-spacing: normal;
     }
 }
 
@@ -131,6 +131,7 @@
         color: #CBD5E1;
         background: #334155;
         border-radius: 7.6916px;
+        cursor: default;
 
         &:not(:last-child) {
             margin-right: 10px;
